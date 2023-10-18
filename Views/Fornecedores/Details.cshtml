@@ -1,0 +1,36 @@
+﻿@model CadastroFornecedores.Models.Fornecedor
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h4 class="text-center">Detalhes do Fornecedor</h4>
+            <hr />
+
+            <dl class="row">
+                <dt class="col-sm-3">Nome</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Nome)</dd>
+
+                <dt class="col-sm-3">CNPJ</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Cnpj)</dd>
+
+                <dt class="col-sm-3">Especialidade</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Especialidade)</dd>
+
+                <dt class="col-sm-3">CEP</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Cep)</dd>
+
+                <dt class="col-sm-3">Endereço</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Endereco)</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <a asp-action="Index" class="btn btn-secondary">Voltar para a Lista</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">Editar</a> |
+</div>

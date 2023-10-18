@@ -1,0 +1,36 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+    body.dark-mode {
+        background-color: #1a1a24;
+        color: #ffffff;
+    }
+.table {
+    background-color: #ffffff;
+    color: #000000;
+}
+.dark-mode .table.table-dark {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.dark-mode .btn {
+    background-color: #343a40;
+    color: #ffffff;
+}
